@@ -24,4 +24,24 @@ class BankController {
     def viewPublicNotices(){
         println "pub"
     }
+
+    def createNewAccount(Object account){
+        println "Creating a new account"
+    }
+
+    def viewEmployee(){
+        println "Viewing employee details"
+    }
+
+    def topUpAccount(){
+        println "Topping up an account"
+    }
+
+    def issueLoan(Object loan){
+        println "Issuing a loan"
+    }
+
+    def issueCreditCard(Object creditcard){
+        println "Issuing a credit card"
+    }
 }
