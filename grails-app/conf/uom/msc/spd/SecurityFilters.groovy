@@ -13,6 +13,12 @@ class SecurityFilters {
             [controller: 'bank', action: 'viewCustomer', securityLevel:'confidential',priority: 3],
             [controller: 'bank', action: 'doRecruitement', securityLevel:'restricted',priority: 2],
             [controller: 'bank', action: 'viewPublicNotices', securityLevel:'unclassified',priority: 1]
+            [controller: 'bank', action: 'createNewAccount', securityLevel:'restricted',priority: 2]
+            [controller: 'bank', action: 'viewEmployee', securityLevel:'confidential',priority: 3]
+            [controller: 'bank', action: 'topUpAccount', securityLevel:'confidential',priority: 3]
+            [controller: 'bank', action: 'issueLoan', securityLevel:'secret',priority: 4]
+            [controller: 'bank', action: 'issueCreditCard', securityLevel:'secret',priority: 4]
+
     ]
 
     Map<String,Integer> secLevelMap = ['top_secret':5,'secret':4,'confidential':3,'restricted':2,'unclassified':1]
